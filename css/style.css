@@ -1,0 +1,132 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  background: var(--body-bg-color);
+  color: var(--text-color) ;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-style: normal;
+  font-size: 1rem; 
+}
+
+.container{
+  display: grid;
+  grid-template-areas: "aside main" "footer footer";
+  grid-template-columns: 22rem 70rem;
+  margin: 2rem 2rem 1rem;
+}
+
+aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main {
+  grid-area: main;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.profile, .links, .technologies, .experience, .education {
+  background: var(--bg-cards);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 20rem;
+}
+ 
+.my-projects {
+  background: var(--bg-cards);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.profile, .links, .technologies, .experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile{
+  padding-top: 10px;
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 2px solid #00FF00;
+  margin-bottom: 20px ;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  gap: 1rem;
+  padding-left: 20px;
+}
+
+.technologies, .experience, .education {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.technology {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.tech {
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-techs);
+  border-radius: 50px;
+
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.1 rem;
+  color: var(--body-bg-color);
+}
+
+ul {
+  font-weight: 700;
+  padding: 1rem 2rem 1rem;
+  gap: 3rem;
+}
+
+.exp-date {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.exp-desc {
+  font-weight: 600;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
