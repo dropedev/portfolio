@@ -43,7 +43,7 @@ main {
 
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .profile, .links, .technologies, .experience, .education {
@@ -52,16 +52,51 @@ main {
   border-radius: 10px;
   width: 20rem;
 }
- 
-.my-projects {
+
+.project-one, .project-two, .project-three, .project-four {
   background: var(--bg-cards);
   box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  width: 500px;
+  height: 168px;
+  padding: 20px 20px;
+}
+ 
+.my-projects, .recents-posts, .post {
+  background: var(--bg-cards);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-left: 60px;
 }
 
 .profile, .links, .technologies, .experience {
   display: flex;
   flex-direction: column;
+}
+
+.technologies, .experience, .education {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+
+.profile img, .post img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 2px solid #00FF00;
+  margin-bottom: 20px ;
+}
+
+.projects, .recents-posts{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+}
+
+.title-post, .body-post {
+  margin-left: 30px;
 }
 
 .profile{
@@ -71,25 +106,12 @@ main {
   justify-content: center;
 }
 
-.profile img {
-  width: 128px;
-  height: 128px;
-  border-radius: 50%;
-  border: 2px solid #00FF00;
-  margin-bottom: 20px ;
-}
-
 .links a {
   display: flex;
   align-items: center;
   padding: 7px;
   gap: 1rem;
   padding-left: 20px;
-}
-
-.technologies, .experience, .education {
-  padding-top: 10px;
-  padding-left: 10px;
 }
 
 .technology {
@@ -129,4 +151,38 @@ ul {
   font-weight: 600;
   font-size: 15px;
   padding-bottom: 10px;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+.title-post {
+  font-weight: 700;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+
+.title-project{
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title-project p{
+  margin-left: 15px;
+}
+
+.project-three, .project-four {
+  margin-top: 20px;
 }
